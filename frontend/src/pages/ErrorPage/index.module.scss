@@ -1,0 +1,12 @@
+.wrapper {
+	// max-width: 1440px;
+	margin: 0px auto 0px auto;
+	padding: 32px 32px 0px 32px;
+	//on center
+	display: flex;
+	// justify-content: space-between;
+	flex-direction: row;
+	color: white;
+
+	overflow-y: hidden;
+}

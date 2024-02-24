@@ -1,0 +1,295 @@
+.clickCounter {
+	width: 72px;
+	height: 32px;
+	background-color: #233223;
+	border-radius: 16px;
+	cursor: pointer;
+
+	.clickRow {
+		margin-top: 5px;
+		margin-bottom: 8px;
+		margin-left: 8px;
+		margin-right: 8px;
+		display: flex;
+		align-items: center;
+	}
+
+	.clickImg {
+		width: 18px;
+		height: 18px;
+		margin-right: 4px;
+	}
+
+	.clickText {
+		color: #57bd53;
+	}
+}
+
+.rowIdCheckbox {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.check {
+	height: 16px;
+}
+
+.headerCellSort_Sort div:first-child {
+	width: 100%;
+	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: overlay;
+
+	button {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		align-items: center;
+
+		width: 100%;
+		margin: 0;
+
+		border-radius: 6px;
+		padding: 3px 8px;
+	}
+
+	button:hover {
+		transition: all 0.2s;
+		color: #f2f2f2;
+		background-color: #474747;
+
+		.headerCellSort_SVG svg:first-child path {
+			stroke: #f2f2f2;
+		}
+	}
+}
+
+.headerCellSort_SVG {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.headerCellSort_SVG svg:first-child {
+	margin-right: 4px;
+}
+
+// Search
+.headerTable {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.LabelSearch input {
+	width: 220px;
+
+	background-color: #1a1a1a;
+	border-radius: 10px;
+	border: 1px solid #333;
+	outline: none;
+
+	padding: 10px 0;
+}
+
+.LabelSearch input::placeholder {
+	// padding-left: 40px;
+	color: #808080;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+}
+
+.LabelSearch input[type='text'] {
+	padding-left: 40px;
+	padding-right: 10px;
+	color: #808080;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+}
+
+.iconSearch {
+	position: relative;
+	bottom: 50%;
+	left: 7%;
+}
+
+// Buttons For Filter
+
+.sortTableButton {
+	height: 36px;
+
+	background-color: #1a1a1a;
+	border-radius: 10px;
+	border: 1px solid #333;
+
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+}
+
+.sortTableButton:last-child {
+	width: 153px;
+}
+
+.sortTableButton:not(:last-child) {
+	width: 159px;
+	margin-right: 8px;
+}
+
+.sortTableButtonWrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 10px 8px 10px 16px;
+
+	.sortTableButtonTextGray {
+		color: #808080;
+		font-family: Inter;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 16px; /* 114.286% */
+
+		margin-right: 12px;
+	}
+	svg {
+		width: 16px;
+		height: 16px;
+	}
+
+	.sortTableButtonTextGrayExtra {
+		color: #f2f2f2;
+		font-family: Inter;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 16px; /* 114.286% */
+	}
+}
+
+.DetailsCell {
+	border-radius: 50%;
+	border: 1px solid #333;
+
+	padding: 4px 10px;
+
+	cursor: pointer;
+}
+
+.extended {
+	display: block;
+	margin-bottom: 26px;
+}
+
+.extendedLink {
+	.Link {
+		margin-right: 20px;
+	}
+}
+
+.extendedBlock {
+	display: flex;
+	justify-content: space-between;
+
+	margin-bottom: 16px;
+}
+
+// .DatePicker div input {
+// 	cursor: pointer;
+
+// 	width: 227px;
+// 	height: 36px;
+
+// 	color: #f2f2f2;
+// 	font-family: Inter;
+// 	font-size: 14px;
+// 	font-style: normal;
+// 	font-weight: 400;
+// 	line-height: 16px; /* 114.286% */
+
+// 	background-color: #1a1a1a;
+// 	border-radius: 10px;
+// 	border: 1px solid #333;
+
+// 	padding: 10px 16px;
+// }
+
+// .DatePicker div svg {
+// 	right: 16px !important;
+// 	color: #808080;
+// }
+
+.DatePicker {
+	min-width: 227px;
+	height: 36px;
+
+	display: flex;
+	align-items: center;
+	background-color: #1a1a1a;
+	border-radius: 10px;
+	border: 1px solid #333;
+
+	padding: 10px 16px;
+
+	cursor: pointer;
+
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+}
+
+.extendedButton {
+	background: none;
+}
+
+.extendedButton:hover,
+.extendedButton:active,
+.extendedButton:focus {
+	background: #262626;
+}
+
+.noCompany {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	margin: 128px auto 0 auto;
+
+	.noCompanyTitle {
+		font-size: 14px;
+
+		margin-bottom: 8px;
+	}
+
+	.noCompanyLabel {
+		font-size: 14px;
+
+		margin-bottom: 16px;
+	}
+}
+.HeaderCell div:first-child {
+	padding: 3px 8px;
+
+	border-radius: 6px;
+	&:hover {
+		transition: all 0.2s;
+		color: #f2f2f2;
+		background-color: #474747;
+	}
+}

@@ -1,0 +1,24 @@
+.navLabel {
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+
+	margin-right: 5px;
+}
+.HeaderRow {
+	align-items: center;
+	margin-bottom: 17px;
+}
+
+.HeaderRow svg {
+	color: #808080;
+	cursor: pointer;
+}
+
+.HeaderRow svg:hover {
+	color: #f2f2f2;
+	transition: all .2s;
+}

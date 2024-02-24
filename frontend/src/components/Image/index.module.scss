@@ -1,0 +1,25 @@
+.imageBlock {
+	cursor: grab;
+	width: 166px;
+	height: 166px;
+	min-width: 166px;
+	min-height: 166px;
+	border-radius: 10px;
+	position: relative;
+
+	margin-right: 15px;
+	margin-bottom: 15px;
+
+	.image {
+		width: 166px;
+		height: 166px;
+		border-radius: 10px;
+	}
+}
+
+.close {
+	cursor: pointer;
+	position: absolute;
+	top: 4px;
+	right: 4px;
+}

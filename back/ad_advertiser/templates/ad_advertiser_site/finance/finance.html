@@ -1,0 +1,11 @@
+ФИНАНСЫ<hr>
+{% if message %}
+    {{ message }}
+{% else %}
+    {% for action in financial_actions%}
+        Дата операции | {{action.date_creation}} <br>
+        Операция | {{action.operation}} <br>
+        Сумма | {{action.cost}} <br>
+        Промокод |{{action.promocode}} <hr>
+    {% endfor %}
+{% endif %}

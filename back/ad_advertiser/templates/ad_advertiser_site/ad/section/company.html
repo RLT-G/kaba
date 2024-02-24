@@ -1,0 +1,39 @@
+КОМПАНИИ | <a href="../create&company/">Создать компанию</a><br>
+<a href="../company&audience/">аудитории</a> <br>
+<a href="../company&banner/">баннеры</a> <br>
+<a href="../company&company/">компании</a> <br>
+
+{% if message %}
+    {{message}}
+{% else %}
+<hr>
+    {% for company in company_data %}
+        name | {{company.name}} <br>
+        status | статус не известен<br>
+        date_start | {{company.date_start}} <br>
+        date_finish | {{company.date_finish}} <br>
+        budget_week | {{company.budget_week}} <br>
+        domain | {{company.site.domain}} <br>
+        channel_taboo | {{company.channel_taboo}} <br>
+        expense_all | не известен<br>
+        expens_vat_all | не известен<br>
+        cpc | не известен<br>
+        <hr>
+    {% endfor %}
+{% endif %}
+
+
+<!-- site = models.ForeignKey(siteModel, related_name='ad_companyModel_siteModel', on_delete=models.CASCADE)
+
+    date_creation = models.DateTimeField('Дата и время создания', auto_now_add=True)
+    name = models.CharField('Название', max_length=255)
+
+    date_start = models.DateTimeField('Дата начала')
+    date_finish = models.DateTimeField('Дата завершения', blank=False)
+    budget_week = models.PositiveIntegerField('Недельный бюджет')
+    # Запрещенные медиаресурсы
+    channel_taboo = ArrayField(models.CharField(max_length=255), blank=False, default=list, size=500)
+    # ключевые фразы 
+    phrase_plus = ArrayField(models.CharField(max_length=60), blank=False, default=list, size=500)
+    # минус фразы 
+    phrase_minus = ArrayField(models.CharField(max_l -->

@@ -1,0 +1,256 @@
+.wrapper {
+	// max-width: 1440px;
+	margin: 0px auto 0px auto;
+	padding: 11px 32px 0px 32px;
+	//on center
+	display: flex;
+	flex-direction: row;
+	color: white;
+
+	overflow-y: hidden;
+}
+
+.leftMenu {
+	max-width: 180px;
+	min-height: 100vh;
+	margin-right: 32px;
+	width: 100%;
+}
+
+.rightMenu {
+	width: 100%;
+	// max-width: 1440px;
+	// margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+// @media screen and (max-width: 1600px) {
+// 	.rightMenu {
+// 		margin-left: 180px;
+// 		width: 1440px;	
+// 	}
+	
+// }
+@media screen and (max-width: 1440px) {
+	.rightMenu {
+		margin-left: 180px;
+		width: 1164px;	
+	}
+	
+}
+.simplebar-placeholder {
+	display: none;
+}
+
+.Line {
+	margin: 32px 0px;
+}
+
+.MenuWrapper {
+	margin-bottom: 32px;
+}
+
+.MenuCol {
+	border-radius: 10px;
+	border: 1px solid #262626;
+	background: #262626;
+
+	padding: 16px 16px;
+}
+
+.MenuCol:not(:last-child) {
+	margin-right: 16px;
+}
+
+.MenuHeaderRow {
+	margin-bottom: 16px;
+}
+
+.CheckBox {
+	color: #808080;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+
+	white-space: nowrap;
+}
+
+.CheckBox.Orange input:checked + label::before {
+	content: url('../../assets/icons/ShapeOrange.svg');
+	background-color: #f3a63b;
+}
+
+.CheckBox.Purple input:checked + label::before {
+	content: url('../../assets/icons/ShapePurple.svg');
+	background-color: #6049b4;
+}
+
+.CheckBox.Green input:checked + label::before {
+	content: url('../../assets/icons/ShapeGreen.svg');
+	background-color: #57bd53;
+}
+
+.CheckBox.Red input:checked + label::before {
+	content: url('../../assets/icons/ShapeRed.svg');
+	background-color: #f3553e;
+}
+
+// COMPANY
+
+.AddCompanyWrapper {
+	max-width: 1164px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.AddCompanyBtn {
+	border-radius: 10px;
+	border: 1px solid #262626;
+	background: #1a1a1a !important;
+
+	margin-right: 16px;
+
+	height: 48px !important;
+}
+
+.AddCompanyBtn svg {
+	margin-right: 8px;
+}
+
+.AddCompanySpan {
+	border-radius: 10px;
+	background: #262626;
+
+	padding-left: 16px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-right: 16px;
+	margin-bottom: 16px;
+
+	cursor: pointer;
+
+	.AddCompanySpanTitle {
+		display: flex;
+		justify-content: space-between;
+
+		cursor: inherit;
+	}
+}
+
+// GRAPHS
+
+// Calendar
+.extended {
+	display: block;
+	margin-bottom: 26px;
+}
+
+.extendedLink {
+	.Link {
+		margin-right: 20px;
+	}
+}
+
+.extendedBlock {
+	display: flex;
+	justify-content: space-between;
+	// width: 1164px;
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+.DatePicker div input {
+	cursor: pointer;
+
+	width: 227px;
+	height: 36px;
+
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+
+	background-color: #1a1a1a;
+	border-radius: 10px;
+	border: 1px solid #333;
+
+	padding: 10px 16px;
+}
+
+.DatePicker div svg {
+	right: 16px !important;
+	color: #808080;
+}
+
+.extendedButton {
+	background: none;
+}
+
+.extendedButton:hover,
+.extendedButton:active,
+.extendedButton:focus {
+	background: #262626;
+}
+
+
+// Buttons For Filter
+
+.MenuButtonsWrapper {
+	justify-content: space-between;
+	margin-bottom: 17px;
+	.MenuButtons {
+		background: none;
+	}
+
+	.MenuButtons:hover {
+		background: #333;
+	}
+	
+	.MenuButtons.active {
+		background: #333;
+	}
+}
+
+.sortTableButton {
+	width: auto;
+	height: 36px;
+
+	background-color: #1a1a1a;
+	border-radius: 10px;
+	border: 1px solid #333;
+
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+
+	margin-right: 8px;
+}
+
+.sortTableButtonWrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 10px 10px 10px 16px;
+
+	.sortTableButtonTextGray {
+		color: #808080;
+		font-family: Inter;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 16px; /* 114.286% */
+
+		margin-right: 16px;
+	}
+}

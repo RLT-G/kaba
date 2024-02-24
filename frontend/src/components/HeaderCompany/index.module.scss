@@ -1,0 +1,58 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	color: #f2f2f2;
+	margin-bottom: 16px;
+
+	.up {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 16px;
+	}
+
+	.up h1,
+	.up svg {
+		margin-right: 5px;
+	}
+
+	.up svg {
+		color: #808080;
+		cursor: pointer;
+	}
+
+	.up svg:hover {
+		transition: all 0.2s;
+		color: #f2f2f2;
+	}
+
+	.down {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		font-size: 14px;
+		font-weight: 400;
+
+		.companiesMenu {
+			padding: 10px;
+			cursor: pointer;
+			margin-right: 4px;
+			.companiesText {
+				margin-right: 8px;
+			}
+
+			.companiesNum {
+				padding: 4px 8px;
+				border-radius: 12px;
+				background: #333;
+			}
+		}
+
+		.companiesMenu.active,
+		.companiesMenu:hover {
+			border-radius: 10px;
+			background: #262626;
+		}
+	}
+}

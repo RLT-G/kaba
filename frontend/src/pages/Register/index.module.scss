@@ -1,0 +1,75 @@
+.wrapper {
+	max-width: 1440px;
+	margin: 0px auto 0px auto;
+
+	//on center
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrapper_register {
+	.navLabel {
+		margin-bottom: 32px;
+	}
+	.input_container {
+		margin-bottom: 32px;
+		.input_row_question {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			margin-bottom: 8px;
+
+			label {
+				margin-right: 4px;
+			}
+		}
+
+		.input_row_phone {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+			.blueButtonReg {
+				color: #4169e1;
+				background: none;
+				&:hover {
+					transition: all 0.3s;
+					color: white;
+					background-color: #4169e1;
+				}
+			}
+		}
+	}
+	.blueButtonSendCode_reg {
+		background: none;
+		border: 1px solid #262626;
+		border-radius: 10px;
+		color: #808080;
+		margin-bottom: 32px;
+	}
+
+	.blueButtonRegisterDis_reg {
+		background-color: #333;
+		color: #808080;
+	}
+
+	.checkbox_container_reg {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		color: #808080;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 16px;
+		margin-bottom: 32px;
+	}
+}
+
+.blueLink {
+	color: #4169e1;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	cursor: pointer;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+
+<html lang="ru">
+
+
+<head>
+
+    <!-- фавиконки -->
+    {% block favicon_base %}{% endblock favicon_base %}
+
+    
+
+    <!-- имя страницы -->
+    <title>{% block title %}{% endblock title %}</title>
+
+    
+
+    <!-- шрифты подключит -->
+    <style>
+        /* обычный шрифт */
+        @font-face {
+            font-family: 'YS Regular';
+            src: url("{% static 'font_family/Yandex_Sans/YandexSansText-Regular.ttf' %}");
+        }
+        /* выделенный шрифт */
+        @font-face {
+            font-family: 'YS Medium';
+            src: url("{% static 'font_family/Yandex_Sans/YandexSansText-Medium.ttf' %}");
+        }
+        /* жирный шрифт */
+        @font-face {
+            font-family: 'YS Bold';
+            src: url("{% static 'font_family/Yandex_Sans/YandexSansText-Bold.ttf' %}");
+        }
+    </style>
+
+
+    <!-- основные стили -->
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/style.css' %}" >
+    
+
+
+    <!-- стили проекта -->
+    {% block css_base %}{% endblock css_base %}
+    
+
+    <!-- стили отдельных страниц проекта -->
+    {% block css %}{% endblock css %}
+
+
+
+    <!-- новые иконки -->
+    <!-- <link rel="stylesheet" href="{% static 'icon/css/all.min.css' %}"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+    <!-- подключение jquery -->
+    <script src="{% static 'base/js/foreign_code/jquery.js' %}"></script>
+    
+
+
+    <!-- скрипты основных проектов -->
+    {% block script_base %}{% endblock script_base %}
+
+
+    <!-- отдельные скрипты страниц -->
+    {% block script %}{% endblock script %}
+
+</head>
+
+
+
+
+<body>
+        
+    <!-- шапка приложений -->
+    {% block header_base %}{% endblock header_base %}
+
+    <!-- контент -->
+    <main id="main">
+        {% block main_base %}{% endblock main_base %}
+    </main>
+
+    <!-- подвал -->
+    {% block footer %}{% endblock footer %}
+    
+
+    <!-- скрипты основные проектов -->
+    {% block script_2_base %}{% endblock script_2_base %}
+
+
+    <!-- отдельные скрипты страниц -->
+    {% block script_2 %}{% endblock script_2 %}
+
+
+</body>
+
+
+</html>

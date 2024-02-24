@@ -1,0 +1,41 @@
+.wrapper {
+	width: 157px;
+	height: 258px;
+	flex-shrink: 0;
+
+	overflow: hidden;
+
+	border-radius: 10px;
+	border: 1px solid #333;
+	background: #262626;
+	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+
+	color: #FFF;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+}
+
+.Line {
+	background: #333;
+
+	position: relative;
+	margin: 0;
+}
+
+.ColWrapper {
+	align-items: flex-start;
+}
+
+.WhiteLabelBtn {
+	padding: 10px 16px;
+	cursor: pointer;
+	white-space: nowrap;
+
+	* {
+		cursor: inherit;
+	}
+}
+

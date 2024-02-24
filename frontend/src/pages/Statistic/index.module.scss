@@ -1,0 +1,96 @@
+.wrapper {
+	// max-width: 1440px;
+	margin: 0px auto 0px auto;
+	padding: 11px 32px 0px 32px;
+	//on center
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	color: white;
+
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+
+.leftMenu {
+	max-width: 180px;
+	min-height: 100vh;
+	width: 100%;
+	margin-right: 32px;
+}
+
+.rightMenu {
+	width: 100%;
+	// max-width: 1440px;
+	// margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	overflow-x: scroll;
+}
+// @media screen and (max-width: 1600px) {
+// 	.rightMenu {
+// 		margin-left: 180px;
+// 		width: 1440px;	
+// 	}
+// }
+
+@media screen and (max-width: 1440px) {
+	.rightMenu {
+		// margin-left: 180px;
+		width: 1164px;
+		overflow-x: scroll;	
+	}
+	
+}
+.simplebar-placeholder {
+	display: none;
+}
+
+.TableLineFooter {
+	position: relative;
+	bottom: 6%;
+	margin: auto;
+}
+
+.noCompany {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	margin: 128px auto 0 auto;
+
+	.noCompanyTitle {
+		font-size: 14px;
+
+		margin-bottom: 8px;
+	}
+
+	.noCompanyLabel {
+		font-size: 14px;
+
+		margin-bottom: 16px;
+	}
+}
+
+.noTransFinancy {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	margin: 128px auto 0 auto;
+
+	.noTransFinancyTitle {
+		font-size: 14px;
+
+		margin-bottom: 8px;
+	}
+
+	.noTransFinancyLabel {
+		font-size: 14px;
+		line-height: 16px; /* 114.286% */
+
+		margin-bottom: 16px;
+	}
+}

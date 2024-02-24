@@ -1,0 +1,17 @@
+ВХОД
+{# Обработка формы лежит полностью на сервере #}
+<form method="post" novalidate>
+    {% csrf_token %}
+{# Сделал расположение обьектов по своему вкусу. #}
+    {% if AuthenticationForm.login_or_phone_number %}
+        Логин | {{ AuthenticationForm.login_or_phone_number }} | {{ AuthenticationForm.login_or_phone_number.errors.0 }}<br>
+        <button id="">Войти</button><br>
+    {% else %}
+        Код подтверждения | {{ AuthenticationForm.confirmation_code }} | {{ AuthenticationForm.confirmation_code.errors.0 }}<br>
+        {% if error %}
+            {{ error }}<br>
+        {% endif %}
+        Номер | {{ phone_number }}<br>
+        <button id="">Далее</button><br>
+    {% endif %}
+</form>

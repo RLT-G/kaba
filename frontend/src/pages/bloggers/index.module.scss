@@ -1,0 +1,232 @@
+.wrapper {
+	// max-width: 1440px;
+	margin: 0px auto 0px auto;
+	padding: 32px 32px 0px 32px;
+	//on center
+	display: flex;
+	// justify-content: space-between;
+	flex-direction: row;
+	color: white;
+
+	overflow-y: hidden;
+}
+
+.leftMenu {
+	max-width: 180px;
+	min-height: 100vh;
+	margin-right: 32px;
+}
+
+.rightMenu {
+	// width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 1440px) {
+	.rightMenu {
+		margin-left: 180px;
+		width: 1164px;	
+	}
+	
+}
+
+.headerCellSort_Sort div:first-child {
+	width: 100%;
+	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: overlay;
+	padding: 0 10px 0 0;
+
+	button {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		align-items: center;
+
+		width: 100%;
+		margin: 0;
+
+		border-radius: 6px;
+		padding: 6px 8px;
+	}
+
+	button:hover {
+		transition: all 0.3s;
+		background-color: #474747;
+	}
+}
+
+.headerCellSort_SVG {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.headerCellSort_SVG svg:first-child {
+	margin-right: 4px;
+}
+
+
+
+// Search
+.headerTable {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.LabelSearch input {
+	width: 220px;
+
+	background-color: #1a1a1a;
+	border-radius: 10px;
+	border: 1px solid #333;
+	outline: none;
+
+	padding: 10px 0;
+}
+
+.LabelSearch input::placeholder {
+	// padding-left: 40px;
+	color: #808080;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+}
+
+.LabelSearch input[type='text'] {
+	padding-left: 40px;
+	padding-right: 10px;
+	color: #808080;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+}
+
+.iconSearch {
+	position: relative;
+	bottom: 50%;
+	left: 7%;
+}
+
+// Buttons For Filter
+// .sortTableButton:first-child {
+// 	margin-right: 8px;
+// }
+
+.sortTableButtons {
+	margin-right: 32px;
+}
+
+.filterTableButton {
+	width: 110px;
+	height: 36px;
+	flex-shrink: 0;
+
+	margin-right: 8px;
+
+	background-color: #1a1a1a;
+	border-radius: 10px;
+	border: 1px solid #333;
+
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+
+	* {
+		white-space: nowrap;
+	}
+
+	.filterTableButtonWrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		padding: 10px 10px 10px 16px;
+	}
+}
+
+.sortTableButton {
+	width: 181px;
+	height: 36px;
+
+	background-color: #1a1a1a;
+	border-radius: 10px;
+	border: 1px solid #333;
+
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+}
+
+.sortTableButtonWrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 10px 10px 10px 16px;
+
+	.sortTableButtonTextGray {
+		color: #808080;
+		font-family: Inter;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 16px; /* 114.286% */
+
+		margin-right: 16px;
+	}
+}
+
+.BloggersBannersWCourse {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.MenuBannersWCourse {
+	margin-right: 16px;
+	margin-bottom: 16px;
+}
+
+.LoadMore {
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+
+	margin-bottom: 16px;
+	.SpanLoadMore {
+		border-radius: 18px;
+		border: 1px solid #333;
+
+		padding: 10px 16px;
+
+		color: #f2f2f2;
+		font-family: Inter;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 16px; /* 114.286% */
+		cursor: pointer;
+	}
+
+	.SpanLoadMore:hover {
+		transition: all 0.2s;
+		background-color: #333;
+	}
+}

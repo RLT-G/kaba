@@ -1,0 +1,138 @@
+.wrapper {
+	width: 280px;
+	max-height: 489px;
+	border-radius: 10px;
+	border: 1px solid #333;
+	background: #262626;
+	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 18px;
+
+	padding-bottom: 16px;
+
+	.header_notice {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		padding: 13px 16px;
+	}
+
+	.NavLabel {
+		color: #f2f2f2;
+		font-family: Inter;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 24px; /* 150% */
+		letter-spacing: -0.1px;
+	}
+
+	.LineHeader {
+		background-color: #333;
+		margin-top: 0px;
+		margin-bottom: 15px;
+	}
+
+	.btnAllRead {
+		display: flex;
+		justify-content: flex-end;
+		margin-bottom: 16px;
+		padding: 0 16px;
+	}
+
+	.colBalance {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.balance {
+		display: flex;
+		flex-direction: row;
+		padding: 0px 16px;
+		margin-bottom: 8px;
+
+		.balanceText {
+			margin: 0px 8px;
+			margin-bottom: 6px;
+		}
+
+		.balanceText p {
+			width: 200px;
+			margin-bottom: 6px;
+		}
+	}
+
+	.blueButtonHeader {
+		margin-bottom: 16px;
+	}
+}
+
+.blueLink {
+	color: #4169e1;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+	cursor: pointer;
+}
+
+.LineMenu {
+	position: relative;
+	left: 2%;
+	background-color: #333;
+	margin-top: 0px;
+	margin-bottom: 16px;
+}
+
+// Notifaction
+.notiMenu {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 0 16px;
+	margin-bottom: 16px;
+
+	.notiText p {
+		margin-bottom: 8px;
+	}
+}
+
+// Company
+.companyMenu {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 0 16px;
+	margin-bottom: 16px;
+
+	.companyText p {
+		margin-bottom: 8px;
+	}
+}
+
+// Table
+.TableContainer {
+	height: 48px;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.TableMenu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 16px;
+
+	border-radius: 10px;
+	background: #333;
+
+	cursor: pointer;
+}

@@ -1,0 +1,23 @@
+АУДИТОРИИ | <a href="../create&audience/">Создать аудиторию</a><br>
+<a href="../company&audience/">аудитории</a> <br>
+<a href="../company&banner/">баннеры</a> <br>
+<a href="../company&company/">компании</a> <br>
+
+{% if message %}
+    {{message}}
+{% else %}
+<hr>
+    {% for audience in audience_data %}
+        status | статус не известен<br>
+        geography | {{audience.geography}} <br>
+        category | {{audience.category}} <br>
+        interest | {{audience.interest}} <br>
+        gender_age | {{audience.gender_age}} <br>
+        device | {{audience.device}} <br>
+        solvency | {{audience.solvency}} <br>
+        expense_all | не известен<br>
+        expens_vat_all | не известен<br>
+        cpc | не известен<br>
+        <hr>
+    {% endfor %}
+{% endif %}

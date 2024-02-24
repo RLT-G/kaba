@@ -1,0 +1,119 @@
+.wrapper_position {
+	// position: fixed;
+	// left: 0;
+	// right: 0;
+	// margin-left: auto;
+	// margin-right: auto;
+
+	width: 280px;
+
+	border-radius: 10px;
+	border: 1px solid #333;
+	background: #262626;
+
+	color: #f2f2f2;
+}
+
+.container {
+	margin: 16px 16px;
+
+	.deleteText {
+		width: 200px;
+
+		color: #f2f2f2;
+		font-family: Inter;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 18px; /* 128.571% */
+
+		margin-bottom: 16px;
+	}
+}
+
+.TableContainer {
+	height: 48px;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+
+	margin-bottom: 32px;
+}
+
+.TableMenu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 16px;
+
+	border-radius: 10px;
+	background: #333;
+
+	cursor: pointer;
+}
+
+.TableButtons {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.TableText {
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 16px; /* 114.286% */
+
+	white-space: nowrap;
+}
+
+.ButtonEmpty {
+	border-radius: 10px;
+	border: 1px solid #333;
+
+	color: #f2f2f2;
+	text-align: center;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+
+	margin-right: 8px;
+}
+
+.ButtonEmptyDelete {
+
+	border-radius: 10px;
+	border: 1px solid #333;
+
+	color: #f2f2f2;
+	text-align: center;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+
+	margin-right: 8px;
+}
+
+.exitButton {
+	position: relative;
+
+	left: 30px;
+	bottom: 4px;
+	color: #808080;
+
+	svg {
+		cursor: pointer;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		transition: all 0.2s;
+		color: #f2f2f2;
+	}
+}

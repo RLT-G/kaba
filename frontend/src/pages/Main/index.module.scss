@@ -1,0 +1,169 @@
+.wrapper {
+	max-width: 1440px;
+	margin: 0px auto 0px auto;
+
+	//on center
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.signin {
+		display: flex;
+		flex-direction: column;
+		margin-top: 32px;
+
+		.NavLabel {
+			color: #f2f2f2;
+			font-family: Inter;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+
+			margin-bottom: 32px;
+		}
+
+		.ChooseCol {
+			height: 104px;
+
+			padding: 16px;
+			margin-bottom: 8px;
+
+			border-radius: 10px;
+
+			cursor: pointer;
+
+			&:hover,
+			&:active,
+			&:focus,
+			&.active {
+				transition: all 0.2s;
+				background: #262626;
+			}
+
+			.ChooseNavLabel {
+				color: #f2f2f2;
+				font-family: Inter;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 16px; /* 114.286% */
+				letter-spacing: -0.087px;
+
+				margin-bottom: 8px;
+
+				cursor: inherit;
+			}
+
+			.ChooseText {
+				color: #808080;
+				font-family: Inter;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 16px; /* 114.286% */
+				letter-spacing: -0.087px;
+
+				cursor: inherit;
+			}
+		}
+		
+		.ChooseColLast {
+			margin-bottom: 32px;
+		}
+
+		.SocButtonRow {
+			display: flex;
+			align-items: center;
+
+			height: 36px;
+
+			padding: 8px;
+			margin-bottom: 8px;
+
+			border-radius: 10px;
+			background: #262626;
+
+			cursor: pointer;
+
+			&:hover,
+			&:active,
+			&:focus {
+				transition: all 0.2s;
+				background: #333;
+			}
+
+			img {
+				margin-right: 16px;
+			}
+
+			.SocText {
+				width: 272px;
+
+				color: #fff;
+				text-align: center;
+				font-family: Inter;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 16px; /* 114.286% */
+			}
+		}
+
+		.CreateAccText {
+			margin-top: 24px;
+			color: #808080;
+			font-family: Inter;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 16px; /* 114.286% */
+		}
+
+		.BlueLink {
+			color: #4169e1;
+			font-family: Inter;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 16px;
+
+			cursor: pointer;
+		}
+
+		// OLD LOGIN STYLE
+
+		// .input_container {
+		// 	display: flex;
+		// 	flex-direction: column;
+		// 	width: 360px;
+		// 	margin-top: 32px;
+
+		// 	.login {
+		// 		margin-top: 8px;
+		// 	}
+		// }
+
+		// .button_container {
+		// 	display: flex;
+		// 	flex-direction: column;
+		// 	width: 360px;
+		// 	margin-top: 32px;
+
+		// 	.createAccount {
+		// 		margin-top: 8px;
+		// 	}
+		// }
+
+		// .socials {
+		// 	display: flex;
+		// 	flex-direction: column;
+		// 	width: 360px;
+		// 	margin-top: 32px;
+
+		// 	.socialButtons {
+		// 		margin-top: 16px;
+		// 	}
+		// }
+	}
+}

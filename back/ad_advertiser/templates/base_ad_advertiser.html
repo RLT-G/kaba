@@ -1,0 +1,91 @@
+{% extends 'base/basis.html' %}
+
+{% load static %}
+
+
+
+
+<!-- фавиконки -->
+{% block favicon_base %}
+
+    {% include "include_exam_terms/favicon.html" %}
+
+{% endblock favicon_base %}
+
+
+
+
+{% block title %}{% endblock title %}
+
+
+
+
+<!-- стили всего проекта -->
+{% block css_base %}
+
+    <!-- подвал -->
+    {% block footer_css %}
+    {% endblock footer_css %}
+
+    <!-- шапка -->
+    {% block header_css %}
+        <link rel="stylesheet" type="text/css" href="{% static 'include_exam_terms/header/header.css' %}">
+    {% endblock header_css %}
+
+    <!-- стиль проекта -->
+    <link rel="stylesheet" type="text/css" href="{% static 'include_exam_terms/base/base.css' %}">
+
+{% endblock css_base %}
+
+
+<!-- стили отдельных страниц -->
+{% block css %}{% endblock css %}
+
+
+
+
+<!-- скрипт проекта -->
+{% block script_base %}
+
+    <!-- подключение jquery -->
+    <script src="{% static 'base/js/foreign_code/jquery.js' %}"></script>
+
+{% endblock script_base %}
+
+
+
+
+<!-- шапка -->
+{% block header_base %}
+
+    {% include "include_exam_terms/header/header.html" %}
+
+{% endblock header_base %}
+
+
+
+
+<!-- контент -->
+{% block main_base %}
+
+    {% block main %}{% endblock main %}
+
+{% endblock main_base %}
+
+
+
+
+<!-- подвал -->
+{% block footer %}
+{% endblock footer %}
+
+
+
+
+<!-- скрипты основные проектов -->
+{% block script_2_base %}
+{% endblock script_2_base %}
+
+
+<!-- отдельные скрипты страниц -->
+{% block script_2 %}{% endblock script_2 %}

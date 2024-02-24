@@ -1,0 +1,9 @@
+НАСТРОЙКИ (общие) <br>
+<a href="../setting&notification/">Уведомления</a> <br>
+<a href="../setting&general/">Общие</a> <br>
+<hr>
+<form method="post" novalidate>
+    {% csrf_token %} 
+    {{form.as_p}}
+    <button onclick="SubmitEvent">Сохранить</button>
+</form>

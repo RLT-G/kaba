@@ -1,0 +1,53 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	color: #f2f2f2;
+	width: 528px;
+	.up {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 16px;
+		justify-content: space-between;
+	}
+
+	.up h1,
+	.up svg {
+		// margin-right: 5px;
+	}
+
+	.up svg {
+		cursor: pointer;
+	}
+
+	.down {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		font-size: 14px;
+		font-weight: 400;
+
+		.companiesMenu {
+			padding: 10px;
+			cursor: pointer;
+			margin-right: 4px;
+			border-radius: 10px;
+
+			.companiesText {
+				margin-right: 8px;
+			}
+
+			.companiesNum {
+				padding: 4px 8px;
+				border-radius: 12px;
+				background: #333;
+			}
+		}
+
+		.companiesMenu.active,
+		.companiesMenu:hover {
+			background: #262626;
+		}
+	}
+}

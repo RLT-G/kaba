@@ -1,0 +1,89 @@
+.p-treeselect-items-wrapper,
+.p-treeselect-panel,
+.p-tree {
+	background-color: #262626 !important;
+    box-shadow: none;
+}
+
+.p-tree {
+	padding: 0;
+}
+
+.p-checkbox-box {
+	width: 16px;
+	height: 16px;
+	border-radius: 5px;
+	background: #333;
+}
+
+.p-checkbox-box.p-highlight {
+	width: 16px;
+	height: 16px;
+	content: url('../src/assets/icons/Shape.svg');
+	border: 1px solid transparent;
+	background-color: #4169e1;
+}
+
+.p-treenode {
+	padding: 0;
+}
+
+.p-treenode-content {
+	height: 36px;
+}
+
+.p-treenode-children .p-treenode {
+	padding-left: 12px;
+}
+
+.p-treenode-content {
+	color: #808080;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+}
+
+.p-treenode-selectable.p-highlight {
+	background-color: #262626;
+	color: #f2f2f2 !important;
+}
+
+.p-treenode-content.p-treenode-selectable {
+}
+
+.p-tree-toggler {
+	width: 100%;
+	position: absolute;
+	opacity: 1;
+	
+}
+
+.p-tree-toggler-icon {
+
+    content: url('../../assets/xChips.svg') !important;
+}
+
+
+.p-chips-token {
+    display: flex;
+    align-items: center;
+}
+
+.p-chips-token-icon {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+
+}
+
+.p-chips-token-icon::before{
+    content: url('../../assets/xChips.svg') !important;
+    display: flex;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+}

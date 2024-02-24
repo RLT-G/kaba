@@ -1,0 +1,68 @@
+.stepsInfo {
+	width: 246px;
+	border: 1px solid #262626;
+	border-radius: 10px;
+	cursor: pointer;
+
+	.stepRow {
+		justify-content: space-between;
+		padding: 10px 0px 10px 16px;
+		// align-items: center;
+		cursor: inherit;
+
+		.stepDone {
+			margin-right: 8px;
+			cursor: inherit;
+		}
+
+		.stepTitle {
+			width: 190px;
+
+			color: #fff;
+			font-family: Inter;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 16px; /* 114.286% */
+
+			cursor: inherit;
+		}
+
+		.stepTitleRed {
+			width: 190px;
+
+			color: #F3553E;
+			font-family: Inter;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 16px; /* 114.286% */
+
+			cursor: inherit;
+		}
+
+		.stepTitleGrey {
+			width: 190px;
+
+			color: #808080;
+			font-family: Inter;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 16px; /* 114.286% */
+
+			cursor: inherit;
+		}
+
+		&:not(:last-child) {
+			border-bottom: 1px solid #262626;
+		}
+
+		&:hover {
+			.stepTitleGrey {
+				transition: all 0.15s;
+				color: #f2f2f2;
+			}
+		}
+	}
+}

@@ -1,0 +1,123 @@
+.wrapper {
+	width: 280px;
+	min-height: 383px;
+
+	padding: 13px 16px;
+
+	border-radius: 10px;
+	border: 1px solid #333;
+	background: #262626;
+}
+
+.blueLink {
+	color: #4169e1;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	cursor: pointer;
+}
+
+.checkbox_container_reg {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+
+	color: #808080;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+
+	margin-bottom: 32px;
+
+	cursor: pointer;
+
+	* {
+		cursor: inherit;
+	}
+}
+
+.Line {
+	background: #333;
+	position: relative;
+	right: 6.5%;
+
+	margin: 16px 0;
+}
+
+.LineSelect {
+	background: #333;
+	position: relative;
+	left: 8%;
+	margin: 8px 0;
+}
+
+.DepositeHeader {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.NavLabel {
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.NavLabelSum {
+	margin-bottom: 9px;
+}
+
+.whiteLabel {
+	color: #808080;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+
+	margin-bottom: 8px;
+}
+
+.input {
+	width: 248px;
+	border-radius: 8px;
+	background: #333;
+	padding: 10px 16px;
+	outline: none;
+
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+}
+
+.input::placeholder {
+	color: #808080;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+}
+
+.ButtonWrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.muiSelectDetails {
+	width: 248px;
+	height: 36px;
+
+	border: 1px solid #333;
+	border-radius: 10px;
+}
+
+.ButtonDep {
+	cursor: pointer;
+	background-color: #4169E1;
+}

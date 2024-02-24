@@ -1,0 +1,10 @@
+РЕГИСТРАЦИЯ - РЕКЛАМОДАТЕЛЬ <br>
+Добро пожаловать в Каба рекламу! <br>
+Ваш логин: `{{login}}`<br>
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <p>Я принимаюл условия пользовательского соглашения <input type="checkbox" required></p>
+    <p>Я принимаюл условия договора <input type="checkbox" required></p>
+    <button onclick="SubmitEvent">Начать пользоваться</button>
+</form>

@@ -1,0 +1,46 @@
+.wrapper {
+	max-width: 1440px;
+	margin: 0px auto 0px auto;
+
+	//on center
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.checkbox_container_reg {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	color: #808080;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	margin-bottom: 32px;
+}
+
+.inputContainerWelcome {
+	display: flex;
+	flex-direction: column;
+	width: 360px;
+	margin-top: 32px;
+	min-width: 360px;
+
+	.orgInput {
+		margin-top: 8px;
+	}
+
+	.countryInputWelcome {
+		margin-top: 8px;
+		min-width: 360px;
+		margin-bottom: 8px;
+	}
+}
+
+.blueLink {
+	color: #4169e1;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	cursor: pointer;
+}

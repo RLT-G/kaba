@@ -1,0 +1,86 @@
+.wrapper {
+	// max-width: 1440px;
+	margin: 0px auto 0px auto;
+	padding: 11px 32px 0px 32px;
+	//on center
+	display: flex;
+	// justify-content: space-between;
+	flex-direction: row;
+	color: white;
+
+	overflow-y: hidden;
+}
+
+.leftMenu {
+	max-width: 180px;
+	width: 100%;
+	z-index: 10;
+	// min-height: 90vh;
+	margin-right: 32px;
+}
+
+.rightMenu {
+	min-width: 1300px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+@media screen and (max-width: 1440px) {
+	.rightMenu {
+		margin-left: 180px;
+		width: 1300px;	
+	}
+	
+}
+.simplebar-placeholder {
+	display: none;
+}
+
+.TableLineFooter {
+	position: relative;
+	bottom: 6%;
+	margin: auto;
+}
+
+.noCompany {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	margin: 128px auto 0 auto;
+
+	.noCompanyTitle {
+		font-size: 14px;
+
+		margin-bottom: 8px;
+	}
+
+	.noCompanyLabel {
+		font-size: 14px;
+
+		margin-bottom: 16px;
+	}
+}
+
+.noTransFinancy {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	margin: 128px auto 0 auto;
+
+	.noTransFinancyTitle {
+		font-size: 14px;
+
+		margin-bottom: 8px;
+	}
+
+	.noTransFinancyLabel {
+		font-size: 14px;
+		line-height: 16px; /* 114.286% */
+
+		margin-bottom: 16px;
+	}
+}

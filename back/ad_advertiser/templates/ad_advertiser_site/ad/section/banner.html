@@ -1,0 +1,29 @@
+БАННЕРЫ | <a href="../create&banner/">Создать баннер</a> <br>
+<a href="../company&audience/">аудитории</a> <br>
+<a href="../company&banner/">баннеры</a> <br>
+<a href="../company&company/">компании</a> <br>
+
+{% if message %}
+    {{message}}
+{% else %}
+<hr>
+    {% for banner in banner_data %}
+        name | {{banner.name}} <br>
+        status | статус не известен<br>
+        link | {{banner.link}} <br>
+        title_option | {{banner.title_option}} <br>
+        description_option | {{banner.description_option}} <br>
+        image_option | {{banner.image_option}} <br>
+        video_option | {{banner.video_option}} <br>
+        audio_option | {{banner.audio_option}} <br>
+        channel_private_bool | {{banner.channel_private_bool}} <br>
+        phrase_plus | {{banner.ad_company.phrase_plus}} <br>
+        phrase_minus | {{banner.ad_company.phrase_minus}} <br>
+
+        expense_all | не известен<br>
+        expens_vat_all | не известен<br>
+        cpc | не известен<br>
+        <hr>
+    {% endfor %}
+{% endif %}
+

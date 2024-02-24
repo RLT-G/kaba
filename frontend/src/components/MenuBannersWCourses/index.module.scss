@@ -1,0 +1,127 @@
+.blueLink {
+	color: #4169e1;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	cursor: pointer;
+}
+
+.Line {
+	background: #333;
+	position: relative;
+	right: 6.2%;
+
+	margin: 10px 0px;
+}
+
+.wrapper {
+	width: 280px;
+	// min-height: 513px;
+	// height: 410px;
+	max-height: 510px;
+	padding: 10px 16px;
+
+	border-radius: 10px;
+	background: #262626;
+}
+
+.BlogerHeader {
+	.BlogerHeaderUp {
+		margin-bottom: 8px;
+	}
+
+	.BlogerButtons {
+		align-items: center;
+	}
+}
+
+.Clicks {
+	margin: 0px !important;
+}
+
+.ContainerMainBlock {
+	margin-bottom: 16px;
+
+	.LabelMainBlock {
+		margin-right: 4px;
+	}
+}
+
+.TitleTooltip {
+	align-items: center;
+	margin-right: 4px;
+	margin-bottom: 0px;
+}
+
+.Span {
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+}
+
+.SpanMark {
+	width: 34px;
+	height: 24px;
+	flex-shrink: 0;
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+
+	border-radius: 12px;
+	border: 1px solid #333;
+
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+}
+
+.LabelError {
+	color: #f3553e;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+}
+
+.ErrorMargin {
+	margin-bottom: 80px;
+}
+
+.Buttons {
+	margin-bottom: 11px;
+}
+
+.ButtonAddRemove {
+	margin-right: 8px;
+}
+
+.LabelDetails {
+	display: flex;
+	justify-content: center;
+
+	cursor: pointer;
+}
+
+.LabelDetails:hover {
+	transition: all 0.2s;
+	color: #f2f2f2;
+}
+
+.ToolTip path {
+	fill: #808088;
+}
+
+.ToolTip:hover {
+	path {
+		fill: #f2f2f2;
+	}
+}

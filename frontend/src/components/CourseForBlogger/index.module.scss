@@ -1,0 +1,27 @@
+.blueLink {
+	color: #4169e1;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	cursor: pointer;
+}
+
+.BlogerHeader {
+	margin-bottom: 32px;
+
+	.BlogerHeaderUp {
+		margin-bottom: 8px;
+	}
+
+	.BlogerHeaderUp svg:not(:last-child) {
+		margin-right: 16px;
+	}
+
+	.BlogerButtons {
+		align-items: center;
+	}
+}
+
+.Clicks {
+	margin: 0px !important;
+}

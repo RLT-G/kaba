@@ -1,0 +1,94 @@
+.wrapper {
+	width: 280px;
+	// min-height: 222px;
+
+	// Убрать высоту ниже, если захотим вернуть Финансы и Настройки и добавить min-height:222px;
+	height: 130px;
+
+	border-radius: 10px;
+	border: 1px solid #333;
+	background: #262626;
+	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+
+	padding: 16px 16px;
+}
+
+.wrapperBlogger {
+	width: 280px;
+	min-height: 222px;
+
+	border-radius: 10px;
+	border: 1px solid #333;
+	background: #262626;
+	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+
+	padding: 16px 16px;
+}
+
+.wrapperAvatar {
+	width: 248px;
+}
+
+.AccountName {
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+	letter-spacing: -0.087px;
+}
+
+.AccountLine {
+	display: flex;
+	align-items: center;
+
+	cursor: pointer;
+	margin-bottom: 16px;
+}
+
+.AccountText {
+	margin-left: 16px;
+	margin-right: 52px;
+}
+
+.AccountBlueButton {
+	margin-bottom: 22px;
+}
+
+.AccountSpan {
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 16px; /* 114.286% */
+
+	margin-left: 8px;
+}
+
+.AccountPages,
+.AccountPages_last {
+	display: flex;
+	align-items: center;
+
+	cursor: pointer;
+}
+
+.AccountPages_last:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.AccountLineComponent {
+	position: relative;
+	right: 6.5%;
+	margin: 16px 0;
+
+	background: #333;
+}
+
+.leftsideOpen {
+	position: absolute;
+	right: 285px;
+	top: 0px;
+}

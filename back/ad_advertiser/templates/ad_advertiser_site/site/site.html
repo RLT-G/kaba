@@ -1,0 +1,11 @@
+САЙТЫ
+{% if message %}
+    {{message}}
+{% else %}
+<hr>
+    {% for site in sites %}
+        Сайт | {{site.site.domain}} <br> 
+        Счетчик | не известно<br>
+        <hr>
+    {% endfor %}
+{% endif %}

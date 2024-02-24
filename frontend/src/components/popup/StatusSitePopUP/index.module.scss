@@ -1,0 +1,45 @@
+.ListInside {
+	width: 280px;
+	height: 180px;
+	border-radius: 10px;
+	border: 1px solid #333;
+	background: #262626;
+	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+	padding: 9px 15px;
+}
+
+.ListInsideRow svg {
+	margin-right: 4px;
+}
+
+.ListInsideRow:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.NavLabelListInside {
+	width: 228px;
+
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+}
+
+.Line {
+	position: relative;
+	left: 5.5%;
+
+	background: #333;
+	margin: 0;
+}
+
+.emptyDiv {
+	// background-color: red;
+	position: absolute;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	z-index: 2;
+}

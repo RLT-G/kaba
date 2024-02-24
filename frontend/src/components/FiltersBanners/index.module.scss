@@ -1,0 +1,149 @@
+.navLabel {
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px; /* 150% */
+	letter-spacing: -0.1px;
+}
+
+.wrapper {
+	width: 560px;
+	max-height: 852px;
+	flex-shrink: 0;
+
+	border-radius: 10px;
+	border: 1px solid #333;
+	background: #262626;
+	color: white;
+
+
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+	padding: 13px 16px;
+}
+
+.headerBanner {
+	justify-content: space-between;
+
+	margin-bottom: 13px;
+}
+
+.RowTitle {
+	align-items: center;
+	margin-bottom: 17px;
+}
+
+.Line {
+	margin: 32px 0px;
+	background: #333;
+}
+
+
+.chips {
+	min-width: 528px;
+	width: 528px;
+
+	border-radius: 8px;
+
+	ul {
+		min-width: 528px;
+		width: 528px;
+		background: #333;
+	}
+
+}
+
+.WhiteLabelSwitchBlock {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.WhiteLabelCheckbox {
+	width: 379px;
+}
+
+
+// Slider
+
+.SliderCol {
+	border-radius: 8px;
+	border: 1px solid #333;
+	background: #262626;
+}
+
+.FromToSliderWrapper {
+	
+	justify-content: space-between;
+
+	.FromToSlider {
+		padding: 10px 16px;
+		justify-content: space-between;
+		border-bottom: 1px solid #333;
+	}
+
+	.FromToSlider:first-child {
+		border-right: 1px solid #333;
+	}
+}
+
+
+// Target Doing
+.list {
+	&:not(:last-child) {
+		border-bottom: 1px solid #262626;
+	}
+
+	
+}.CopyNClearWrapper {
+	width: 151px;
+	height: 73px;
+	flex-shrink: 0;
+
+	display: flex;
+	flex-direction: column;
+
+	border-radius: 10px;
+	border: 1px solid #474747;
+	background: #333;
+	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+
+	.CopyAll, .Clear {
+		padding: 10px 16px;
+		cursor: pointer;
+		&:hover {
+			background-color: #474747;
+		}
+	}
+
+	.CopyAll {
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+
+	.Clear {
+		height: 35px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+	p {
+		color: #fff;
+		font-family: Inter;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 16px; /* 114.286% */
+		
+		cursor: pointer;
+
+		white-space: nowrap;
+	}
+	
+	.CopyNClearLine {
+		margin: 0;
+		background: #474747;
+	}
+}

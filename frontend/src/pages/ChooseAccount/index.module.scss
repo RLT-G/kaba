@@ -1,0 +1,39 @@
+.wrapper {
+	max-width: 1440px;
+	margin: 0px auto 0px auto;
+
+	//on center
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.toBack {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+	width: 360px;
+	margin-bottom: 16px;
+
+	.arrow {
+		width: 14px;
+		height: 14px;
+		margin-right: 4px;
+	}
+}
+
+.subTitle {
+	margin-top: 8px;
+}
+
+.chooseAccount {
+	margin-top: 32px;
+	display: flex;
+	float: right;
+}
+
+.lineAccount {
+	position: relative;
+	left: 16%;
+}

@@ -1,0 +1,31 @@
+.wrapper {
+	width: 268px;
+	height: 232px;
+	border-radius: 10px;
+	border: 1px solid #333;
+	background: #262626;
+	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+
+	.infoContainer {
+		color: #f2f2f2;
+		font-family: Inter;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 18px; /* 128.571% */
+
+		padding: 16px 16px;
+	}
+
+	.RowList:not(:last-child) {
+		margin-bottom: 8px;
+	}
+}
+
+.blueLink {
+	color: #4169e1;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	cursor: pointer;
+}

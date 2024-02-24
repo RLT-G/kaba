@@ -1,0 +1,90 @@
+.wrapper {
+	max-width: 1440px;
+	margin: 0px auto 0px auto;
+
+	//on center
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.signin {
+		display: flex;
+		flex-direction: column;
+		margin-top: 32px;
+
+		.NavLabel {
+			margin-bottom: 32px;
+		}
+
+		.input_container {
+			display: flex;
+			flex-direction: column;
+			width: 360px;
+			margin-bottom: 32px;
+
+			.login {
+				margin-top: 8px;
+			}
+		}
+
+		.button_container {
+			display: flex;
+			flex-direction: column;
+			width: 360px;
+			margin-top: 32px;
+
+			.createAccount {
+				margin-top: 8px;
+			}
+		}
+
+		.socials {
+			display: flex;
+			flex-direction: column;
+			width: 360px;
+			margin-top: 32px;
+
+			.socialButtons {
+				margin-top: 16px;
+			}
+		}
+	}
+}
+
+.input_container {
+	.input_row_question {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 8px;
+
+		label {
+			margin-right: 4px;
+		}
+	}
+
+	.input_row_phone {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		.blueButtonReg {
+			width: 108px;
+			color: #4169e1;
+			background: none;
+			&:hover {
+				transition: all 0.3s;
+				color: white;
+				background-color: #4169e1;
+			}
+		}
+	}
+}
+
+.blueButtonSendCode_reg {
+	background: none;
+	border: 1px solid #262626;
+	border-radius: 10px;
+	color: #808080;
+	margin-bottom: 32px;
+}

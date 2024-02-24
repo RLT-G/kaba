@@ -1,0 +1,366 @@
+.wrapper {
+	// max-width: 1440px;
+	margin: 0px auto 0px auto;
+	padding: 11px 32px 0px 32px;
+	display: flex;
+	flex-direction: row-reverse;
+	color: white;
+	overflow: scroll;
+}
+
+.leftMenu {
+	max-width: 180px;
+	margin-right: 32px;
+}
+
+.rightMenu {
+	// width: 100%;
+	max-width: 1440px;
+	display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+}
+@media screen and (max-width: 1440px) {
+	.wrapper {
+		padding: 0;
+	}
+	.rightMenu {
+		margin-left: 180px;
+		width: 1440px;
+	}
+}
+// Header
+
+.down {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	font-size: 14px;
+	font-weight: 400;
+
+	.companiesMenu {
+		padding: 10px;
+		cursor: pointer;
+		margin-right: 4px;
+		border-radius: 10px;
+
+		.companiesText {
+			margin-right: 8px;
+		}
+
+		.companiesNum {
+			padding: 4px 8px;
+			border-radius: 12px;
+			background: #333;
+		}
+	}
+}
+.companiesMenuActive,
+.companiesMenu:hover {
+	background: #262626;
+}
+
+.stepsMenu {
+	margin-top: 112px;
+	// margin-left: 32px;
+}
+
+@media screen and (min-width: 1050px) {
+	.stepsMenu {
+		position: fixed;
+		right: 32px;
+	}
+}
+
+.chips {
+	min-width: 528px;
+	width: 528px;
+
+	ul {
+		min-width: 528px;
+		width: 528px;
+	}
+	.p-inputtext {
+		min-width: 528px;
+		width: 528px;
+		.p-chips-input-token input {
+			min-width: 528px;
+			width: 528px;
+		}
+	}
+}
+
+.list {
+	&:not(:last-child) {
+		border-bottom: 1px solid #262626;
+	}
+}
+
+.inputText {
+	width: 100%;
+	min-width: 100%;
+
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+}
+
+.content {
+	// margin-top: 16px;
+	margin-bottom: 17px;
+}
+
+.contentCol {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	margin-top: 16px;
+}
+
+.Line {
+	margin: 32px 0px;
+}
+
+.RowTitle {
+	align-items: center;
+	margin-bottom: 17px;
+}
+
+.headerNotiBlock {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	margin-bottom: 17px;
+}
+
+.headerNotiTitle {
+	height: 20px;
+}
+
+.navLabel {
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+
+	margin-left: 8px;
+	margin-bottom: 17px;
+}
+
+// Description Banners
+.DescBlock {
+	display: flex;
+	flex-direction: column;
+	width: 528px;
+
+	.textAreaDesc {
+		width: 100%;
+		min-height: 126px;
+		max-height: 200px;
+
+		padding: 10px 16px;
+		margin-bottom: 8px;
+
+		font-size: 14px;
+		font-weight: 400;
+
+		resize: vertical;
+
+		border-radius: 10px;
+		background: #262626;
+		outline: none;
+	}
+
+	.textAreaDesc::placeholder {
+		color: #808080;
+		font-family: Inter;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 16px; /* 114.286% */
+
+		padding-top: 2px;
+	}
+
+	.ColAfterTextArea {
+		border-radius: 10px;
+		border: 1px solid #262626;
+		padding-bottom: 10px;
+		.Line {
+			margin: 10px 0px;
+		}
+	}
+
+	.BlockAfterTextArea {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		.TextBlockAfter {
+			width: 480px;
+
+			padding-top: 10px;
+			padding-left: 16px;
+
+			color: #f2f2f2;
+			font-family: Inter;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 16px; /* 114.286% */
+		}
+	}
+
+	.ButtonAfterExit {
+		margin-top: 10px;
+		margin-right: 8px;
+	}
+}
+
+// DropDown Settings
+
+.ListMoreSettings {
+	padding: 8px 0px !important;
+}
+
+.RowSettings {
+	justify-content: space-between;
+}
+
+.WhiteLabelSwitchBlock {
+	justify-content: space-between;
+}
+
+.WhiteLabelCheckbox {
+	width: 379px;
+}
+
+.DropImageRow,
+.DropVideoRow {
+	flex-wrap: wrap;
+}
+
+.DropVideoRow iframe {
+	width: 256px;
+	height: 144px;
+	flex-shrink: 0;
+
+	border-radius: 10px;
+	border: 1px solid #262626;
+	background: rgba(0, 0, 0, 0.4);
+
+	margin-right: 16px;
+	margin-bottom: 16px;
+}
+
+.AudioRow {
+	height: 48px;
+
+	border-radius: 10px;
+	background: #262626;
+	align-items: center;
+
+	padding: 0px 12px;
+	margin-right: 16px;
+	margin-bottom: 16px;
+}
+
+// Calendar
+
+.DatePicker div input {
+	cursor: pointer;
+
+	width: 227px;
+	height: 36px;
+
+	color: #f2f2f2;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 114.286% */
+
+	background-color: #1a1a1a;
+	border-radius: 10px;
+	border: 1px solid #333;
+
+	padding: 10px 16px;
+}
+
+.DatePicker div svg {
+	right: 16px !important;
+	color: #808080;
+}
+
+// Copy And Clear Pop Up
+
+.CopyNClearWrapper {
+	width: 151px;
+	height: 73px;
+	flex-shrink: 0;
+
+	display: flex;
+	flex-direction: column;
+
+	border-radius: 10px;
+	border: 1px solid #474747;
+	background: #333;
+	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+
+	.CopyAll, .Clear {
+		padding: 10px 16px;
+		cursor: pointer;
+		&:hover {
+			background-color: #474747;
+		}
+	}
+
+	.CopyAll {
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+
+	.Clear {
+		height: 35px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+	p {
+		color: #fff;
+		font-family: Inter;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 16px; /* 114.286% */
+		
+		cursor: pointer;
+
+		white-space: nowrap;
+	}
+	
+	.CopyNClearLine {
+		margin: 0;
+		background: #474747;
+	}
+}
+
+// Link Target Input
+
+.linkTargetInput {
+
+	div {
+		input[type=text] {
+			padding-right: 30px;
+		}
+	}
+} 

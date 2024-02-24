@@ -1,0 +1,92 @@
+РЕГИСТРАЦИЯ
+{# Обработка формы лежит полностью на сервере #}
+<form method="post" novalidate>
+{# Сделал расположение обьектов по своему вкусу. #}
+    {% csrf_token %}
+    Имя | {{ RegistrationForm.name }} | {{ RegistrationForm.name.errors.0 }}<br>
+    Логин | {{ RegistrationForm.login }} | {{ RegistrationForm.login.errors.0 }}<br>
+    Номер телефона | {{ RegistrationForm.phone_number }} | {{ RegistrationForm.phone_number.errors.0 }}<br>
+    Код подтверждения | {{ RegistrationForm.confirmation_code }} | {{ RegistrationForm.confirmation_code.errors.0 }}<br>
+    Пользовательское соглашение | {{ RegistrationForm.terms_of_use }} | {{ RegistrationForm.terms_of_use.errors.0 }}<br>
+    Условия договора | {{ RegistrationForm.agreement }} | {{ RegistrationForm.agreement.errors.0 }}<br>
+    <button id="Get_code">Получить код</button><br>
+    <button id="Send_code_again">Отправить повторно</button><br>
+    <button id="change_phone_number">Изменить номер</button><br>
+    <button id="submit">Зарегистрироваться</button><br>
+    <div id="phone_number_errors"></div>
+    <div id="confirmation_code_errors"></div>
+</form>
+{# jquery для ajax #}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{# Отключаю событие Submit на всех кнопках #}
+<script>
+    $(document).ready(function() {
+        let submitButton1 = $("#Get_code");
+        submitButton1.click(function(event) {
+            event.preventDefault();
+        });
+        let submitButton2 = $("#Send_code_again");
+        submitButton2.click(function(event) {
+            event.preventDefault();
+        });
+        let submitButton3 = $("#change_phone_number");
+        submitButton3.click(function(event) {
+            event.preventDefault();
+        });
+    });
+</script>
+{# ajax запрос серверу для совершение звонка и проверка кода #}
+{# Обработка запроса ajax в файле account/views/confirmation_code/voice.py#}
+<script>
+    $(document).ready(function() {
+        let code;
+        const vocie = function () {
+            let param1 = $("#phone_number").val();
+            if (param1.length === 0) {
+                $("#phone_number_errors").text("Введите номер телефона");
+            } else {
+                if (param1.charAt(0) === "+") {
+                    param1 = param1.substr(1);
+                }
+                let url = `http://127.0.0.1:8000/ajax_request/?param1=${param1}`;
+                $.ajax({
+                    type: "GET",
+                    url: url,
+                    success: function (data) {
+                        // Обработка успешного ответа от сервера
+                        if (typeof data.result === "string") {
+                            $("#phone_number_errors").text(data.result);
+                        } else {
+                            $("#phone_number_errors").text("");
+                            code = data.result[2];
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        // Обработка ошибки
+                        console.error("Произошла ошибка:", error);
+                    }
+                });
+            }
+        }
+        $("#Get_code").click(vocie);
+        $("#Send_code_again").click(vocie);
+        let submitButton4 = $("#submit");
+        submitButton4.click(function(event) {
+            {% if confirmation_code %}
+            {% else %}
+                if ($("#confirmation_code").val() !== code || code === ""){
+                $("#confirmation_code_errors").text("Ошибка подтверждения кода");
+                event.preventDefault();
+            }
+            {% endif %}
+        });
+        $("#confirmation_code").on("input", function() {
+            let inputText = $(this).val();
+            if (inputText !== code){
+                $("#confirmation_code_errors").text("Неверный код");
+            } else {
+                $("#confirmation_code_errors").text("");
+            }
+        });
+    });
+</script>

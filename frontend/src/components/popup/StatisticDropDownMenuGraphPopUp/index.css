@@ -1,0 +1,5 @@
+.MuiListItemButton-root:hover {
+	border-radius: 8px !important;
+	background: #474747 !important;
+	transition: all 0.3s !important;
+}
